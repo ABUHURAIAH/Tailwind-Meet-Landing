@@ -13,7 +13,7 @@
     background-repeat: no-repeat;
     background-position: end;
   }
-  @media(max-width:786px){
+  @media(min-width:768px){
       .footer {
           background-image: linear-gradient(
               to bottom,

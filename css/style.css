@@ -734,7 +734,7 @@ Ensure the default browser behavior of the `hidden` attribute.
   background-position: end;
 }
 
-@media(max-width:786px){
+@media(min-width:768px){
   .footer {
     background-image: linear-gradient(
               to bottom,
