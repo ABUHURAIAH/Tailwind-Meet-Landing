@@ -685,11 +685,6 @@ Ensure the default browser behavior of the `hidden` attribute.
   line-height: 2.5rem;
 }
 
-.text-2xl {
-  font-size: 1.5rem;
-  line-height: 2rem;
-}
-
 .font-bold {
   font-weight: 700;
 }
@@ -728,9 +723,29 @@ Ensure the default browser behavior of the `hidden` attribute.
 }
 
 .footer {
-  background-image: url("assets/mobile/image-footer.jpg");
+  background-image: linear-gradient(
+        to bottom,
+        rgba(77, 150, 169, 0.8), 
+        rgba(77, 150, 169, 0.5)
+      ),
+      url("../assets/mobile/image-footer.jpg");
   background-size: cover;
-  background-position: center;
+  background-repeat: no-repeat;
+  background-position: end;
+}
+
+@media(max-width:786px){
+  .footer {
+    background-image: linear-gradient(
+              to bottom,
+              rgba(77, 150, 169, 0.8), 
+              rgba(77, 150, 169, 0.5)
+            ),
+            url("../assets/desktop/image-footer.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: end;
+  }
 }
 
 @media (min-width: 768px) {
@@ -777,3 +792,4 @@ Ensure the default browser behavior of the `hidden` attribute.
     width: 15rem;
   }
 }
+  
