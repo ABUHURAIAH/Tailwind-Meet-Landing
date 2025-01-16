@@ -1,3 +1,9 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.footer {
+  background-image: url("assets/mobile/image-footer.jpg");
+  background-size: cover;
+  background-position: center;
+}
